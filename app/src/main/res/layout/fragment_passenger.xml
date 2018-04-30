@@ -16,7 +16,7 @@
         <ImageButton
             android:id="@+id/imageUp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="257dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:background="@android:color/holo_green_light"
@@ -26,10 +26,31 @@
         <ImageButton
             android:id="@+id/imageDown"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="254dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:background="@android:color/holo_red_dark"
             app:srcCompat="@drawable/ic_arrow_double_down" />
+
+        <TextView
+            android:id="@+id/number_passengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="125dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/moving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Llevando"
+            android:textColor="@android:color/black"
+            android:textSize="36sp" />
+
     </RelativeLayout>
 </FrameLayout>
