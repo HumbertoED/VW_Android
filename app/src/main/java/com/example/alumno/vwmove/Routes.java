@@ -17,14 +17,17 @@ public class Routes extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                case R.id.navigation_routes:
+                    mTextMessage.setText(R.string.rutas);
                     return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+                case R.id.navigation_passengers:
+                    mTextMessage.setText(R.string.pasajeros);
                     return true;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+                    mTextMessage.setText(R.string.notificaciones);
+                    return true;
+                case R.id.navigation_alerts:
+                    mTextMessage.setText(R.string.alertas);
                     return true;
             }
             return false;
