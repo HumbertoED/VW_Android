@@ -1,6 +1,7 @@
 package com.example.alumno.vwmove;
 
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +18,6 @@ public class RouteActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(listener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RoutesFragment());
     }
 
     BottomNavigationView.OnNavigationItemSelectedListener listener =
@@ -43,7 +43,10 @@ public class RouteActivity extends AppCompatActivity {
 
                     }
 
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment);
+                    android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+                    transaction.replace(R.id.fragment_container, selectedFragment);
+                    transaction.commit();
 
                     return true;
                 }
