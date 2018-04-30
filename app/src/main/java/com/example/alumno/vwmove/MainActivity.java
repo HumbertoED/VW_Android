@@ -1,7 +1,10 @@
 package com.example.alumno.vwmove;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Selection;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -23,8 +26,9 @@ public class MainActivity extends AppCompatActivity {
         forgot = (Button)findViewById(R.id.forgotTxt);
     }
 
-    public void log_in(){
-
+    public void log_in(View v){
+        Intent login = new Intent(this, SelectionActivity.class);
+        startActivity(login);
     }
 
     public void forgot_pass(){
