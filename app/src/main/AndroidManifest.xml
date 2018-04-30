@@ -16,15 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Routes"
-            android:label="@string/title_activity_routes" />
         <activity android:name=".SelectionActivity" />
         <activity android:name=".SelecConfirmActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".PerformanceActivity" />
         <activity android:name=".CommentsActivity" />
-        <activity android:name=".PasswordActivity"></activity>
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".RouteActivity"></activity>
     </application>
 
 </manifest>

@@ -15,7 +15,7 @@ public class SelecConfirmActivity extends AppCompatActivity {
     }
 
     public void log_in_3(View v){
-        Intent login = new Intent(this, Routes.class);
+        Intent login = new Intent(this, RouteActivity.class);
         startActivity(login);
     }
 }
