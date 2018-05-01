@@ -34,7 +34,7 @@ public class NotificationsFragment extends Fragment {
 
         itemsList = new ArrayList<>();
         for(int j = 0; j < 10; j++) {
-            itemsList.add("Hola no."+j);
+            itemsList.add("Notification no."+j);
         }
 
         adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_multiple_choice, itemsList);
@@ -42,7 +42,53 @@ public class NotificationsFragment extends Fragment {
 
         lv.setAdapter(adapter);
 
+        notif.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        notificationsInfo(v);
+                    }
+                }
+        );
+
+        fAlarm.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        alarmsInfo(v);
+                    }
+                }
+        );
+
         return view;
+    }
+
+    public void notificationsInfo(View v) {
+
+        itemsList = new ArrayList<>();
+        for(int j = 0; j < 10; j++) {
+            itemsList.add("Notification no."+j);
+        }
+
+        adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_multiple_choice, itemsList);
+
+
+        lv.setAdapter(adapter);
+
+    }
+
+    public void alarmsInfo(View v) {
+
+        itemsList = new ArrayList<>();
+        for(int j = 0; j < 10; j++) {
+            itemsList.add("Alarms/Fails no."+j);
+        }
+
+        adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_multiple_choice, itemsList);
+
+
+        lv.setAdapter(adapter);
+
     }
 
 }
