@@ -34,7 +34,7 @@ public class RouteActivity extends AppCompatActivity {
                         case R.id.navigation_notifications:
                             selectedFragment = new NotificationsFragment();
                             break;
-                        case R.id.navigation_fails_alerts:
+                        case R.id.navigation_alerts:
                             selectedFragment = new AlertsFragment();
                             break;
                         case R.id.navigation_passengers:
