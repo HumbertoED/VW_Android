@@ -1,11 +1,10 @@
 package com.example.alumno.vwmove;
 
-import android.app.Fragment;
-import android.app.FragmentTransaction;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 public class RouteActivity extends AppCompatActivity {
@@ -31,14 +30,14 @@ public class RouteActivity extends AppCompatActivity {
                         case R.id.navigation_routes:
                             selectedFragment = new RoutesFragment();
                             break;
-                        case R.id.navigation_notifications:
-                            selectedFragment = new NotificationsFragment();
-                            break;
                         case R.id.navigation_alerts:
                             selectedFragment = new AlertsFragment();
                             break;
                         case R.id.navigation_passengers:
                             selectedFragment = new PassengerFragment();
+                            break;
+                        case R.id.navigation_notifications:
+                            selectedFragment = new NotificationsFragment();
                             break;
 
                     }

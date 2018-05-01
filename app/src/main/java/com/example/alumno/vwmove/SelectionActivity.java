@@ -1,9 +1,8 @@
 package com.example.alumno.vwmove;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Selection;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class SelectionActivity extends AppCompatActivity {
