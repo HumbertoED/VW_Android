@@ -15,7 +15,6 @@ import java.util.ArrayList;
 public class NotificationsFragment extends Fragment {
 
     ArrayList<String> itemsList;
-    ArrayList<String> secondaryInf;
     ArrayAdapter<String> adapter;
 
     Button notif;

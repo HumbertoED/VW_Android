@@ -17,6 +17,8 @@ public class RouteActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(listener);
 
+
+
     }
 
     BottomNavigationView.OnNavigationItemSelectedListener listener =
