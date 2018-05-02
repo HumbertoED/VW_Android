@@ -26,8 +26,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void log_in(View v){
-        Intent login = new Intent(this, SelectionActivity.class);
-        startActivity(login);
+
+        Intent intent = new Intent(getApplicationContext(), SelectionActivity.class);
+        intent.putExtra("user", 1);
+        startActivity(intent);
     }
 
     public void forgot_pass(){
