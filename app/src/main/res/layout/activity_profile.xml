@@ -153,7 +153,7 @@
         android:layout_height="28dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/back"
-        android:text="Cerrar Cesión"
+        android:text="Cerrar Sesión"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

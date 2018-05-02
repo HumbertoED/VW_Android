@@ -50,7 +50,7 @@ public class PerformanceActivity extends AppCompatActivity {
     }
 
     public void getBack(View v){
-        Intent prof = new Intent(this, RouteActivity.class);
+        Intent prof = new Intent(this, ProfileActivity.class);
         startActivity(prof);
     }
 }
