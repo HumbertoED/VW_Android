@@ -19,9 +19,6 @@ public class SelectionActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         TextView user = (TextView)findViewById(R.id.textView8);
-
-        user.setText(intent.getDoubleExtra("user", 0));
-
     }
 
     public void log_in_2(View v){
