@@ -27,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void log_in(View v){
 
-        Intent intent = new Intent(getApplicationContext(), SelectionActivity.class);
-        intent.putExtra("user", 1);
+        Intent intent = new Intent(this, SelectionActivity.class);
+        String user = username.getText().toString();
+        intent.putExtra("user", user);
         startActivity(intent);
     }
 
