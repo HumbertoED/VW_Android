@@ -31,6 +31,10 @@ public class RouteActivity extends AppCompatActivity {
         profile = (Button)findViewById(R.id.toolbar_profile);
         emergencies = (Button)findViewById(R.id.toolbar_sos);
 
+        android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, new RoutesFragment() );
+        transaction.commit();
+
     }
 
     public void go_profile(View v){
