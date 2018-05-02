@@ -58,7 +58,8 @@
             android:layout_height="40dp"
             android:layout_gravity="right"
             android:adjustViewBounds="true"
-            android:background="@drawable/user" />
+            android:background="@drawable/user"
+            android:onClick="go_profile" />
     </android.support.v7.widget.Toolbar>
 
 </RelativeLayout>
