@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -60,9 +60,10 @@
         android:id="@+id/imagePerformance"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:layout_height="30dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
+        android:onClick="changeToPerformance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/ic_arrow_right" />
@@ -71,8 +72,9 @@
         android:id="@+id/imageComments"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:layout_height="30dp"
         android:layout_marginEnd="8dp"
+        android:onClick="changeToComments"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagePerformance"
         app:srcCompat="@drawable/ic_arrow_right" />
@@ -81,8 +83,9 @@
         android:id="@+id/imagePassword"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:layout_height="30dp"
         android:layout_marginEnd="8dp"
+        android:onClick="changeToPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageComments"
         app:srcCompat="@drawable/ic_arrow_right" />
@@ -91,55 +94,76 @@
         android:id="@+id/imageClose"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="changeToClose"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagePassword"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_arrow_right" />
 
     <TextView
         android:id="@+id/textPerformance"
-        android:background="@drawable/back"
         android:layout_width="0dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="33dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/back"
         android:text="Rendimiento"
-        android:textSize="30dp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textComments"
-        android:background="@drawable/back"
         android:layout_width="0dp"
-        android:layout_height="42dp"
+        android:layout_height="28dp"
+        android:background="@drawable/back"
         android:text="Comentarios"
-        android:textSize="30dp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPerformance" />
 
     <TextView
         android:id="@+id/textPassword"
-        android:background="@drawable/back"
         android:layout_width="0dp"
-        android:layout_height="42dp"
+        android:layout_height="28dp"
+        android:background="@drawable/back"
         android:text="Cambiar Contraseña"
-        android:textSize="30dp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textComments" />
 
     <TextView
         android:id="@+id/textClose"
         android:layout_width="0dp"
-        android:layout_height="42dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/back"
         android:text="Cerrar Cesión"
-        android:textSize="30dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
+    <ImageButton
+        android:id="@+id/imageComeback"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="changeToRoutes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close_black_24dp" />
 
 </android.support.constraint.ConstraintLayout>
