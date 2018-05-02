@@ -1,5 +1,9 @@
 package com.example.alumno.vwmove;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -28,6 +32,11 @@ public class RouteActivity extends AppCompatActivity {
     public void go_profile(View v){
         Intent prof = new Intent(this, ProfileActivity.class);
         startActivity(prof);
+    }
+
+    public void go_Call(View v){
+        CallEmergencies cE = new CallEmergencies();
+        cE.onCreateDialog();
     }
 
     BottomNavigationView.OnNavigationItemSelectedListener listener =
@@ -62,3 +71,4 @@ public class RouteActivity extends AppCompatActivity {
                 }
             };
 }
+
