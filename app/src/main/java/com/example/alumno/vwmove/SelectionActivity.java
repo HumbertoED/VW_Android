@@ -17,4 +17,9 @@ public class SelectionActivity extends AppCompatActivity {
         Intent login = new Intent(this, RouteActivity.class);
         startActivity(login);
     }
+
+    public void confirmSelection(View v){
+        Intent i = new Intent(this, SelecConfirmActivity.class);
+        startActivity(i);
+    }
 }

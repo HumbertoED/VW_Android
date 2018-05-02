@@ -1,9 +1,14 @@
 package com.example.alumno.vwmove;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 import java.io.FileInputStream;
@@ -18,12 +23,15 @@ import java.util.Properties;
 public class CommentsActivity extends AppCompatActivity {
 
     Spinner spinner;
+    Button back;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comments);
+
+        //back = (ImageButton)findViewById(R.id.imageComeback)
 
         Spinner spinner = (Spinner) findViewById(R.id.time_spinner);
 // Create an ArrayAdapter using the string array and a default spinner layout
@@ -34,6 +42,11 @@ public class CommentsActivity extends AppCompatActivity {
 // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
 
+    }
+
+    public void changeToClose(View v){
+        Intent close = new Intent(this, ProfileActivity.class);
+        startActivity(close);
     }
 
 }

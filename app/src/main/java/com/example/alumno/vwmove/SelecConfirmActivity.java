@@ -13,8 +13,13 @@ public class SelecConfirmActivity extends AppCompatActivity {
         setContentView(R.layout.activity_selec_confirm);
     }
 
-    public void log_in_3(View v){
-        Intent login = new Intent(this, RouteActivity.class);
-        startActivity(login);
+    public void login(View v){
+        Intent i = new Intent(this, RouteActivity.class);
+        startActivity(i);
+    }
+
+    public void go_back(View v){
+        Intent i = new Intent(this, SelectionActivity.class);
+        startActivity(i);
     }
 }
