@@ -17,6 +17,7 @@ import android.widget.Button;
 public class RouteActivity extends AppCompatActivity {
 
     Button profile;
+    Button emergencies;
 
 
     @Override
@@ -28,6 +29,7 @@ public class RouteActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(listener);
 
         profile = (Button)findViewById(R.id.toolbar_profile);
+        emergencies = (Button)findViewById(R.id.toolbar_sos);
 
     }
 
@@ -37,8 +39,24 @@ public class RouteActivity extends AppCompatActivity {
     }
 
     public void go_Call(View v){
-        CallEmergencies cE = new CallEmergencies();
-        cE.onCreateDialog();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle("SOS");
+        builder.setMessage("Llamar al SOS");
+        builder.setPositiveButton("Confirm",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+        builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     BottomNavigationView.OnNavigationItemSelectedListener listener =

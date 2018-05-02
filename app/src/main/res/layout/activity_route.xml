@@ -51,7 +51,8 @@
             android:layout_height="40dp"
             android:layout_gravity="right"
             android:adjustViewBounds="true"
-            android:background="@drawable/sos" />
+            android:background="@drawable/sos"
+            android:onClick="go_Call" />
 
         <Button
             android:id="@+id/toolbar_profile"
