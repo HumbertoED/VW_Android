@@ -14,6 +14,7 @@ public class RouteActivity extends AppCompatActivity {
 
     Button profile;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,7 @@ public class RouteActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(listener);
 
         profile = (Button)findViewById(R.id.toolbar_profile);
+
     }
 
     public void go_profile(View v){
