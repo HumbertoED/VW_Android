@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/toggle/ic_star_border_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/hardware/ic_keyboard_arrow_left_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,9 +33,11 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="empty_star" />
+                            <entry key="height" value="40" />
+                            <entry key="outputName" value="arrow_back" />
                             <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="C:\Users\humbe\Documents\Aplicaciones Moviles\VW_Guidelines_Assets_apr18\VW_Guidelines_Assets_apr18\VW_Web_5_0_Icons_svg-2\NGW_SVGs\arrow-right.svg" />
+                            <entry key="width" value="40" />
                           </map>
                         </option>
                       </PersistentState>
